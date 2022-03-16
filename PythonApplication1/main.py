@@ -43,7 +43,4 @@ def dir(path):
                 if i==0:
                     print("NO CONVERTABLE FILES IN "+path)
 
-
-path= os.path.dirname(os.path.abspath(__file__))
-dir(path)
 ui2py.py()
