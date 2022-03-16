@@ -1,4 +1,4 @@
-# Converter-Of-Webp
+# Converter-Of-Webp(COW)
 
 gif, jpg, png 파일을 드래그 앤 드롭하면 webp형식으로 변환합니다.
 gif, jpg, png 파일이 들어있는 zip 파일을 드래그 앤 드롭하면 압축을 풀고 내부 파일을 변환한 후 다시 압축합니다.
