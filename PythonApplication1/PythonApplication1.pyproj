@@ -28,9 +28,6 @@
     <Compile Include="webp.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="window.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="zip.py">
       <SubType>Code</SubType>
     </Compile>
