@@ -7,6 +7,11 @@ def zip(path):#압축할 파일경로 받음
     shutil.rmtree(path)
 
 def unzip(path):#압축풀 파일 받음
+    name, ext = os.path.splitext(path)
+    shutil.unpack_archive(path,name)
+    os.remove(path)
+
+def checkzip(path):
     my_zip = zipfile.ZipFile(path)
     name, ext = os.path.splitext(path)
     list = my_zip.namelist()
@@ -15,10 +20,7 @@ def unzip(path):#압축풀 파일 받음
         if not (i.find('.jpg')==-1 and i.find('.png')==-1 and i.find('.gif')==-1):
             num=num+1
     if num==0:
-        print("NO CONVERTABLE FILES IN ZIP")
         my_zip.close()
         return 0;
     my_zip.close()
-    shutil.unpack_archive(path,name)
-    os.remove(path)
     return 1;
