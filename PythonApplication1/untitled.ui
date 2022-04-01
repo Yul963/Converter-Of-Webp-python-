@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>577</width>
-    <height>473</height>
+    <width>510</width>
+    <height>438</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Converter Of Webp</string>
+  </property>
+  <property name="toolTip">
+   <string>COW</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="minimumSize">
@@ -20,22 +23,39 @@
      <height>200</height>
     </size>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="toolTip">
+    <string/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="4,2">
     <item>
-     <widget class="QTextBrowser" name="textBrowser"/>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="toolTip">
+       <string>Progress</string>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+     </widget>
     </item>
     <item>
-     <widget class="QGraphicsView" name="graphicsView"/>
+     <widget class="QTextBrowser" name="textBrowser_2"/>
     </item>
    </layout>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="toolTip">
+    <string>Status Bar</string>
+   </property>
+  </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>577</width>
+     <width>510</width>
      <height>22</height>
     </rect>
    </property>
